@@ -17,9 +17,9 @@ inline fun <reified T : Any> typeRef(): ParameterizedTypeReference<T> = object :
 @Service
 class AuditService(val restTemplate: RestTemplate) {
     val AUDIT_GRAPHQL_URL = "http://localhost:9090/graphql"
-    val ACCESS_TOKEN_REQUEST_URL = "http://localhost:8080/auth/realms/envel2/protocol/openid-connect/token"
+    val ACCESS_TOKEN_REQUEST_URL = "http://localhost:8080/auth/realms/example2/protocol/openid-connect/token"
 
-    val KEYCLOAK_CLIENT_ID = "auditenvel"
+    val KEYCLOAK_CLIENT_ID = "auditexample"
     val KEYCLOAK_USERNAME = "employee1"
     val KEYCLOAK_PASSWORD = "123456"
     val KEYCLOAK_GRANT_TYPE = "password"
